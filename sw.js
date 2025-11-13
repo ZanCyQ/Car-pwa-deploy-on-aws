@@ -7,8 +7,8 @@ const PRECACHE_ASSETS = [
   '/style.css',
   '/main.js',
   '/manifest.json',
-  '/img/icon-192x192.png',
-  '/img/icon-512x512.png'
+  '/img/192x192.png'
+ 
 ];
 
 self.addEventListener('install', event => {
@@ -50,7 +50,7 @@ self.addEventListener('fetch', event => {
         return networkRes;
       });
     }).catch(() => {
-      if (req.destination === 'image') return caches.match('/img/icon-192x192.png');
+      if (req.destination === 'image') return caches.match('/img/192x192.png');
     }))
   );
 });

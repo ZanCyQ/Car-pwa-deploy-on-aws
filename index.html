@@ -1,83 +1,76 @@
 <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#2A3443">
+  <title>Carzone - Car Selling PWA</title>
 
-
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="images/logo.png" type="image/png">
-<link rel="stylesheet" href="style.css">
-
-
-<!-- Mobile friendly meta -->
-<meta name="description" content="Carzone - buy & sell cars">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Carzone - buy & sell cars">
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<img src="images/logo.png" alt="Carzone" class="logo">
-<nav class="nav">
-<a href="#home">Home</a>
-<a href="#cars">Cars</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-<button id="installBtn" class="install-btn" aria-hidden="true">Install App</button>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <img src="img/logo.png" alt="Carzone" class="logo">
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="installBtn" class="install-btn" aria-hidden="true">Install App</button>
+    </div>
+  </header>
 
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Carzone</h1>
+        <p>Buy and sell cars — fast, simple and offline-friendly.</p>
+      </div>
+    </section>
 
-<main>
-<section id="home" class="hero">
-<div class="container">
-<h1>Carzone</h1>
-<p>Buy and sell cars — fast, simple and offline-friendly.</p>
-</div>
-</section>
+    <section id="cars" class="cards container">
+      <article class="card">
+        <img src="img/car1.jpg" alt="Car 1">
+        <h3>Toyota Corolla</h3>
+        <p>2018 | Petrol | 45,000 km</p>
+        <a class="btn" href="#">View Details</a>
+      </article>
 
+      <article class="card">
+        <img src="img/car2.jpg" alt="Car 2">
+        <h3>Honda City</h3>
+        <p>2019 | Diesel | 30,000 km</p>
+        <a class="btn" href="#">View Details</a>
+      </article>
+    </section>
 
-<section id="cars" class="cards container">
-<article class="card">
-<img src="images/car1.jpg" alt="Car 1">
-<h3>Toyota Corolla</h3>
-<p>2018 | Petrol | 45,000 km</p>
-<a class="btn" href="#">View Details</a>
-</article>
+    <section id="about" class="container about">
+      <h2>About Carzone</h2>
+      <p>Carzone is a demo PWA for selling cars with offline support and installable experience.</p>
+    </section>
 
+    <section id="contact" class="container contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
 
-<article class="card">
-<img src="images/car2.jpg" alt="Car 2">
-<h3>Honda City</h3>
-<p>2019 | Diesel | 30,000 km</p>
-<a class="btn" href="#">View Details</a>
-</article>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Carzone. All rights reserved.</p>
+    </div>
+  </footer>
 
-
-</section>
-
-
-<section id="about" class="container about">
-<h2>About Carzone</h2>
-<p>Carzone is a demo PWA for selling cars with offline support and installable experience.</p>
-</section>
-
-
-<section id="contact" class="container contact">
-<h2>Contact Us</h2>
-<form id="contactForm">
-<input type="text" name="name" placeholder="Your name" required>
-<input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Message" rows="4" required></textarea>
-<button type="submit" class="btn">Send</button>
-</form>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<div class="container">
-<p>© 2025 Carzone. All rights reserved.</p>
-</div>
-</footer>
-
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

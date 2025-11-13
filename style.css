@@ -1,0 +1,45 @@
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:Arial,Helvetica,sans-serif;background:#f4f6f9;color:#222}
+.container{width:95%;max-width:1000px;margin:0 auto;padding:20px}
+
+
+/* Header */
+.site-header{background:#2A3443;color:#fff;padding:12px 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{height:40px}
+.logo img{height:40px}
+.nav a{color:#fff;margin-left:16px;text-decoration:none}
+.install-btn{background:#fff;color:#2A3443;border:0;padding:8px 12px;border-radius:6px;cursor:pointer}
+.install-btn[aria-hidden="true"]{display:none}
+
+
+/* Hero */
+.hero{padding:40px 0;text-align:center;background:linear-gradient(180deg,#2A3443 0%,#24303a 100%);color:#fff}
+.hero h1{font-size:36px;margin-bottom:8px}
+.hero p{opacity:0.9}
+
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;padding:30px 0}
+.card{background:#fff;border-radius:8px;padding:12px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+.card h3{margin:10px 0}
+.btn{display:inline-block;padding:8px 12px;background:#2A3443;color:#fff;text-decoration:none;border-radius:6px}
+
+
+/* About & Contact */
+.about, .contact{background:#fff;margin:20px 0;padding:18px;border-radius:8px}
+.contact form{display:flex;flex-direction:column;gap:10px}
+.contact input,.contact textarea{padding:10px;border:1px solid #ddd;border-radius:6px}
+
+
+/* Footer */
+.site-footer{padding:18px 0;text-align:center;color:#666}
+
+
+/* Responsive */
+@media(max-width:640px){
+.site-header .container{flex-direction:column;gap:10px}
+.nav{display:flex;gap:8px}
+}
